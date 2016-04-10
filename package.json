@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "ava && semistandard | snazzy",
+    "posttest": "readme package.json --travis > readme.md",
     "build": "rm -rf dist && mkdir -p dist && babel lib --out-dir dist",
     "watch": "rm -rf dist && mkdir -p dist && babel -w lib --out-dir dist",
     "prepublish": "npm run build"
