@@ -1,19 +1,19 @@
-# walk-apple-news [![Build Status](https://travis-ci.org/micnews/walk-apple-news.png?branch=master)](https://travis-ci.org/micnews/walk-apple-news)
+# walk-apple-news-format [![Build Status](https://travis-ci.org/micnews/walk-apple-news-format.png?branch=master)](https://travis-ci.org/micnews/walk-apple-news-format)
 
-Walk &amp; do inline transformations of an apple news feed
+Walk the components in an apple news format JSON structure.
 
 ## Installation
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install walk-apple-news --save
+npm install walk-apple-news-format --save
 ```
 
 ## Usage
 
 ```js
-import walk from './';
+import walk from 'walk-apple-news-format';
 
 const appleNewsFormat = {
   components: [{
@@ -28,6 +28,7 @@ const appleNewsFormat = {
   }]
 };
 
+// walk will call the callback once for all components, even nested
 walk(appleNewsFormat, function (component) {
   console.log('component', component);
 });

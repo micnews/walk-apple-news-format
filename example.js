@@ -1,4 +1,4 @@
-import walk from 'walk-apple-news';
+import walk from 'walk-apple-news-format';
 
 const appleNewsFormat = {
   components: [{
