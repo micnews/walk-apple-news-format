@@ -1,6 +1,6 @@
 {
   "name": "walk-apple-news-format",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Walk the components in an apple news format JSON structure.",
   "main": "dist/index.js",
   "scripts": {
