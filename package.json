@@ -4,7 +4,7 @@
   "description": "Walk the components in an apple news format JSON structure.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "ava && semistandard | snazzy",
+    "test": "ava && miclint | snazzy",
     "posttest": "readme package.json --travis > readme.md",
     "build": "rm -rf dist && mkdir -p dist && babel lib --out-dir dist",
     "watch": "rm -rf dist && mkdir -p dist && babel -w lib --out-dir dist",
@@ -25,8 +25,8 @@
     "babel-cli": "^6.7.5",
     "babel-core": "^6.7.6",
     "babel-preset-es2015": "^6.6.0",
+    "miclint": "^1.5.0",
     "package-json-to-readme": "^1.5.1",
-    "semistandard": "^9.0.0",
     "snazzy": "^5.0.0"
   }
 }

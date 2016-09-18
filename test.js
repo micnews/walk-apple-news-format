@@ -1,15 +1,17 @@
+/* eslint-disable import/no-extraneous-dependencies */
+
 import test from 'ava';
 import 'babel-core/register';
 import walk from './lib';
 
 test('walk empty array', t => {
-  walk({components: []}, obj => {
+  walk({ components: [] }, () => {
     t.fail('callback should not be run');
   });
 });
 
 test('walk simple anf', t => {
-  const input = {components: [{role: 'photo', URL: 'bundle://image-1'}]};
+  const input = { components: [{ role: 'photo', URL: 'bundle://image-1' }] };
   const expected = input.components[0];
   walk(input, obj => {
     t.is(obj, expected);

@@ -13,7 +13,7 @@ npm install walk-apple-news-format --save
 ## Usage
 
 ```js
-import walk from 'walk-apple-news-format';
+import walk from 'walk-apple-news-format'; // eslint-disable-line
 
 const appleNewsFormat = {
   components: [{
@@ -29,8 +29,8 @@ const appleNewsFormat = {
 };
 
 // walk will call the callback once for all components, even nested
-walk(appleNewsFormat, function (component) {
-  console.log('component', component);
+walk(appleNewsFormat, (component) => {
+  console.log('component', component); //eslint-disable-line
 });
 
 ```
@@ -52,7 +52,8 @@ None
 - [babel-cli](https://github.com/babel/babel/tree/master/packages): Babel command line.
 - [babel-core](https://github.com/babel/babel/tree/master/packages): Babel compiler core.
 - [babel-preset-es2015](https://github.com/babel/babel/tree/master/packages): Babel preset for all es2015 plugins.
-- [semistandard](https://github.com/Flet/semistandard): All the goodness of `feross/standard` with semicolons sprinkled on top.
+- [miclint](https://github.com/micnews/miclint): mic lint cli
+- [package-json-to-readme](https://github.com/zeke/package-json-to-readme): Generate a README.md from package.json contents
 - [snazzy](https://github.com/feross/snazzy): Format JavaScript Standard Style as Stylish (i.e. snazzy) output
 
 
