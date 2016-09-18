@@ -1,4 +1,4 @@
-import walk from 'walk-apple-news-format';
+import walk from 'walk-apple-news-format'; // eslint-disable-line
 
 const appleNewsFormat = {
   components: [{
@@ -14,6 +14,6 @@ const appleNewsFormat = {
 };
 
 // walk will call the callback once for all components, even nested
-walk(appleNewsFormat, function (component) {
-  console.log('component', component);
+walk(appleNewsFormat, (component) => {
+  console.log('component', component); //eslint-disable-line
 });
